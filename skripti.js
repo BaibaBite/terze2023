@@ -16,6 +16,9 @@ async function ieladetZinas(){
     let datiNoServera = await fetch("zinas.txt");
     //.text datus no severa parāda kā tekstu
     let dati = await datiNoServera.text();
-    console.log(dati);
+    //console.log(dati);
     logs.innerHTML = dati;
 }
+
+//reizi sekundē izpildi funkciju ieladetZinas, aiz komata milisekindēs norāda laiku
+setInterval(ieladetZinas, 1000)
