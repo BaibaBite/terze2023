@@ -13,7 +13,7 @@ function sutitZinu(){
 }
 
 async function ieladetZinas(){
-    let datiNoServera = await fetch("zinas.txt");
+    let datiNoServera = await fetch("szinas.txt");
     //.text datus no severa parāda kā tekstu
     let dati = await datiNoServera.text();
     //console.log(dati);
