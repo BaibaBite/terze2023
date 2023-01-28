@@ -26,5 +26,22 @@ async function ieladetZinas(){
     logs.innerHTML = dati;
 }
 
+async function ieladetZinasJson(){
+    let datiNoServera = await fetch(API + '/lasit');
+    //.text datus no severa parāda kā tekstu
+    let dati = await datiNoServera.json();
+    //console.log(await dati);
+    
+    //treniņš ziņu iegūšanai no Json
+    //console.log(await dati[0]['zina'])
+
+    var i = 0;
+    while (i < await dati.length){
+        //console.log(i);
+        logs.innerHTML = logs.innerHTML + dati[i]['zina']
+        i = i + 1;
+    }
+}
+
 //reizi sekundē izpildi funkciju ieladetZinas, aiz komata milisekindēs norāda laiku
-setInterval(ieladetZinas, 1000)
+//setInterval(ieladetZinas, 1000)
