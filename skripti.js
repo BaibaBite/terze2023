@@ -1,6 +1,8 @@
 console.log("tests")
 //alert(1)
 
+
+//application programming interface (API) is a way for two or more computer programs to communicate with each other
 const API = "https://terzesana2023.baibabite.repl.co"
 //( ) nosaukumu raksra CSS stilā
 let z = document.querySelector("#zina");
@@ -11,6 +13,8 @@ function sutitZinu(){
     console.log("Poga darbojas");
 
     logs.innerHTML = logs.innerHTML + "</br>" + z.value;
+
+    fetch (API + '/sutit/Baiba/' + z.value)
 }
 
 async function ieladetZinas(){
