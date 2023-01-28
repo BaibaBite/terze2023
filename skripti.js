@@ -8,7 +8,7 @@ const API = "https://terzesana2023.baibabite.repl.co"
 let z = document.querySelector("#zina");
 //lai pārbaudītu vai darbojas 7.r. saturu iekopē console un nospiež enter, ja ziņa laukā kaut kas ir ierakstīts tas tiks izvadīts
 let logs = document.querySelector(".chataZinas");
-let vards =document.querySelector(".vards");
+let vards =document.querySelector("#vards");
 
 function sutitZinu(){
     console.log("Poga darbojas");
