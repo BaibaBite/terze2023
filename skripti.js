@@ -35,13 +35,17 @@ async function ieladetZinasJson(){
     //treniņš ziņu iegūšanai no Json
     //console.log(await dati[0]['zina'])
 
+
+    //iztīra ziņas
+    logs.innerHTML="";
     var i = 0;
     while (i < await dati.length){
         //console.log(i);
-        logs.innerHTML = logs.innerHTML + dati[i]['zina']
-        i = i + 1;
+        logs.innerHTML = logs.innerHTML + dati[i]['vards'] +": "+ dati[i]['zina'] + "</br>";
+        i = i+1;
     }
+    logs.scrollTop = logs.scrollHeight;
 }
 
 //reizi sekundē izpildi funkciju ieladetZinas, aiz komata milisekindēs norāda laiku
-//setInterval(ieladetZinas, 1000)
+setInterval(ieladetZinasJson, 1000)
