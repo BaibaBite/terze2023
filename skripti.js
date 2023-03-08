@@ -13,9 +13,9 @@ let vards =document.querySelector("#vards");
 function sutitZinu(){
     console.log("Poga darbojas");
 
-    logs.innerHTML = logs.innerHTML + "</br>" + z.value;
-
-    fetch (API + '/sutit/' + vards.value + '/' + z.value)
+    logs.innerHTML = logs.innerHT
+    fetch (API + '/sutit/' + vards.ML + "</br>" + z.value;
+value + '/' + z.value)
 }
 
 async function ieladetZinas(){
